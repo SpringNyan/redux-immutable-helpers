@@ -36,6 +36,6 @@ export class ActionHelper<TPayload> {
     }
 
     isError(action: Action<any>): action is Action<Error> {
-        return action != null && action.type === this.type && action.error;
+        return action != null && action.type === this.type && action.error === true;
     }
 }

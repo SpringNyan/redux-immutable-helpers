@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5"
+        "target": "es5",
+        "outDir": "./dist",
+        "declaration": true
     },
-    "exclude": [
-        "node_modules"
+    "files": [
+        "./src/action.ts",
+        "./src/immutable.ts",
+        "./src/index.ts",
+        "./src/reducer.ts",
+        "./typings/index.d.ts"
     ]
 }
